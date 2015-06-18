@@ -58,7 +58,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8689CDDA1B3347BB00001FEC /* AHEasing-iOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +121,6 @@
 				8045277616A63161001DB532 /* UIKit.framework in Frameworks */,
 				8045277716A63161001DB532 /* Foundation.framework in Frameworks */,
 				8045277816A63161001DB532 /* CoreGraphics.framework in Frameworks */,
-				8689CDD91B3347BB00001FEC /* AHEasing-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +451,6 @@
 /* Begin PBXTargetDependency section */
 		8689CDD81B3347BB00001FEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8689CDC11B3347BB00001FEC /* AHEasing-iOS */;
 			targetProxy = 8689CDD71B3347BB00001FEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -711,6 +708,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -756,6 +754,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -812,6 +811,7 @@
 				8689CE3E1B3359EE00001FEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
