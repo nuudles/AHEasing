@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8689CDC11B3347BB00001FEC"
-               BuildableName = "AHEasing-iOS.framework"
-               BlueprintName = "AHEasing-iOS"
+               BlueprintIdentifier = "8689CE291B3359EE00001FEC"
+               BuildableName = "AHEasing_iOS.framework"
+               BlueprintName = "AHEasing_iOS"
+               ReferencedContainer = "container:AHEasing.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8689CE331B3359EE00001FEC"
+               BuildableName = "AHEasing_iOSTests.xctest"
+               BlueprintName = "AHEasing_iOSTests"
                ReferencedContainer = "container:AHEasing.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +42,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8689CE331B3359EE00001FEC"
+               BuildableName = "AHEasing_iOSTests.xctest"
+               BlueprintName = "AHEasing_iOSTests"
+               ReferencedContainer = "container:AHEasing.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8689CE291B3359EE00001FEC"
+            BuildableName = "AHEasing_iOS.framework"
+            BlueprintName = "AHEasing_iOS"
+            ReferencedContainer = "container:AHEasing.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -42,9 +75,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8689CDC11B3347BB00001FEC"
-            BuildableName = "AHEasing-iOS.framework"
-            BlueprintName = "AHEasing-iOS"
+            BlueprintIdentifier = "8689CE291B3359EE00001FEC"
+            BuildableName = "AHEasing_iOS.framework"
+            BlueprintName = "AHEasing_iOS"
             ReferencedContainer = "container:AHEasing.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,9 +93,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8689CDC11B3347BB00001FEC"
-            BuildableName = "AHEasing-iOS.framework"
-            BlueprintName = "AHEasing-iOS"
+            BlueprintIdentifier = "8689CE291B3359EE00001FEC"
+            BuildableName = "AHEasing_iOS.framework"
+            BlueprintName = "AHEasing_iOS"
             ReferencedContainer = "container:AHEasing.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

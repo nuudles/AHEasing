@@ -36,11 +36,9 @@
 		804527CE16A66C10001DB532 /* PlaygroundNSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 804527CD16A66C10001DB532 /* PlaygroundNSViewController.m */; };
 		804527D316A66FBD001DB532 /* EasingFunctionGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 804527D216A66FBD001DB532 /* EasingFunctionGraphView.m */; };
 		804527D416A67C89001DB532 /* EasingFunctionGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 804527D216A66FBD001DB532 /* EasingFunctionGraphView.m */; };
-		8689CDC71B3347BB00001FEC /* AHEasing-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8689CDC61B3347BB00001FEC /* AHEasing-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8689CDD91B3347BB00001FEC /* AHEasing-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8689CDC21B3347BB00001FEC /* AHEasing-iOS.framework */; };
-		8689CDDA1B3347BB00001FEC /* AHEasing-iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8689CDC21B3347BB00001FEC /* AHEasing-iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8689CDE21B3347E600001FEC /* CAKeyframeAnimation+AHEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 80521A791398175D007386E6 /* CAKeyframeAnimation+AHEasing.m */; };
-		8689CDE31B3347E600001FEC /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 806EB828138F91C700E2D4A7 /* easing.c */; };
+		8689CE2F1B3359EE00001FEC /* AHEasing_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8689CE2E1B3359EE00001FEC /* AHEasing_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8689CE431B335A0E00001FEC /* CAKeyframeAnimation+AHEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 80521A791398175D007386E6 /* CAKeyframeAnimation+AHEasing.m */; };
+		8689CE441B335A0E00001FEC /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 806EB828138F91C700E2D4A7 /* easing.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,9 +108,9 @@
 		806EB7F3138F91A700E2D4A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		806EB828138F91C700E2D4A7 /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
 		806EB829138F91C700E2D4A7 /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
-		8689CDC21B3347BB00001FEC /* AHEasing-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "AHEasing-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8689CDC51B3347BB00001FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8689CDC61B3347BB00001FEC /* AHEasing-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AHEasing-iOS.h"; sourceTree = "<group>"; };
+		8689CE2A1B3359EE00001FEC /* AHEasing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHEasing_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8689CE2D1B3359EE00001FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8689CE2E1B3359EE00001FEC /* AHEasing_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHEasing_iOS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8689CDBE1B3347BB00001FEC /* Frameworks */ = {
+		8689CE261B3359EE00001FEC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,7 +228,7 @@
 				804527CF16A66F10001DB532 /* EasingPlayground-Common */,
 				8045277916A63161001DB532 /* EasingPlayground-iOS */,
 				8045279516A6318C001DB532 /* EasingPlayground-Mac */,
-				8689CDC31B3347BB00001FEC /* AHEasing-iOS */,
+				8689CE2B1B3359EE00001FEC /* AHEasing_iOS */,
 				806EB7EE138F91A700E2D4A7 /* Frameworks */,
 				806EB7EC138F91A700E2D4A7 /* Products */,
 			);
@@ -241,7 +239,7 @@
 			children = (
 				8045277516A63161001DB532 /* EasingPlayground-iOS.app */,
 				8045279216A6318C001DB532 /* EasingPlayground-Mac.app */,
-				8689CDC21B3347BB00001FEC /* AHEasing-iOS.framework */,
+				8689CE2A1B3359EE00001FEC /* AHEasing_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -261,19 +259,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8689CDC31B3347BB00001FEC /* AHEasing-iOS */ = {
+		8689CE2B1B3359EE00001FEC /* AHEasing_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				8689CDC61B3347BB00001FEC /* AHEasing-iOS.h */,
-				8689CDC41B3347BB00001FEC /* Supporting Files */,
+				8689CE2E1B3359EE00001FEC /* AHEasing_iOS.h */,
+				8689CE2C1B3359EE00001FEC /* Supporting Files */,
 			);
-			path = "AHEasing-iOS";
+			path = AHEasing_iOS;
 			sourceTree = "<group>";
 		};
-		8689CDC41B3347BB00001FEC /* Supporting Files */ = {
+		8689CE2C1B3359EE00001FEC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8689CDC51B3347BB00001FEC /* Info.plist */,
+				8689CE2D1B3359EE00001FEC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,11 +279,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8689CDBF1B3347BB00001FEC /* Headers */ = {
+		8689CE271B3359EE00001FEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8689CDC71B3347BB00001FEC /* AHEasing-iOS.h in Headers */,
+				8689CE2F1B3359EE00001FEC /* AHEasing_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,22 +326,22 @@
 			productReference = 8045279216A6318C001DB532 /* EasingPlayground-Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8689CDC11B3347BB00001FEC /* AHEasing-iOS */ = {
+		8689CE291B3359EE00001FEC /* AHEasing_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8689CDDF1B3347BB00001FEC /* Build configuration list for PBXNativeTarget "AHEasing-iOS" */;
+			buildConfigurationList = 8689CE411B3359EE00001FEC /* Build configuration list for PBXNativeTarget "AHEasing_iOS" */;
 			buildPhases = (
-				8689CDBD1B3347BB00001FEC /* Sources */,
-				8689CDBE1B3347BB00001FEC /* Frameworks */,
-				8689CDBF1B3347BB00001FEC /* Headers */,
-				8689CDC01B3347BB00001FEC /* Resources */,
+				8689CE251B3359EE00001FEC /* Sources */,
+				8689CE261B3359EE00001FEC /* Frameworks */,
+				8689CE271B3359EE00001FEC /* Headers */,
+				8689CE281B3359EE00001FEC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "AHEasing-iOS";
-			productName = "AHEasing-iOS";
-			productReference = 8689CDC21B3347BB00001FEC /* AHEasing-iOS.framework */;
+			name = AHEasing_iOS;
+			productName = AHEasing_iOS;
+			productReference = 8689CE2A1B3359EE00001FEC /* AHEasing_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -355,7 +353,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Auerhaus Development, LLC";
 				TargetAttributes = {
-					8689CDC11B3347BB00001FEC = {
+					8689CE291B3359EE00001FEC = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
@@ -374,7 +372,7 @@
 			targets = (
 				8045277416A63161001DB532 /* EasingPlayground-iOS */,
 				8045279116A6318B001DB532 /* EasingPlayground-Mac */,
-				8689CDC11B3347BB00001FEC /* AHEasing-iOS */,
+				8689CE291B3359EE00001FEC /* AHEasing_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -405,7 +403,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8689CDC01B3347BB00001FEC /* Resources */ = {
+		8689CE281B3359EE00001FEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,12 +439,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8689CDBD1B3347BB00001FEC /* Sources */ = {
+		8689CE251B3359EE00001FEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8689CDE31B3347E600001FEC /* easing.c in Sources */,
-				8689CDE21B3347E600001FEC /* CAKeyframeAnimation+AHEasing.m in Sources */,
+				8689CE441B335A0E00001FEC /* easing.c in Sources */,
+				8689CE431B335A0E00001FEC /* CAKeyframeAnimation+AHEasing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +680,7 @@
 			};
 			name = Release;
 		};
-		8689CDDB1B3347BB00001FEC /* Debug */ = {
+		8689CE3D1B3359EE00001FEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -718,7 +716,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "AHEasing-iOS/Info.plist";
+				INFOPLIST_FILE = AHEasing_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -731,7 +729,7 @@
 			};
 			name = Debug;
 		};
-		8689CDDC1B3347BB00001FEC /* Release */ = {
+		8689CE3E1B3359EE00001FEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -763,7 +761,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "AHEasing-iOS/Info.plist";
+				INFOPLIST_FILE = AHEasing_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -807,11 +805,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8689CDDF1B3347BB00001FEC /* Build configuration list for PBXNativeTarget "AHEasing-iOS" */ = {
+		8689CE411B3359EE00001FEC /* Build configuration list for PBXNativeTarget "AHEasing_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8689CDDB1B3347BB00001FEC /* Debug */,
-				8689CDDC1B3347BB00001FEC /* Release */,
+				8689CE3D1B3359EE00001FEC /* Debug */,
+				8689CE3E1B3359EE00001FEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
