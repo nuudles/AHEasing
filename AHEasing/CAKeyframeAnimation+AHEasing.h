@@ -10,6 +10,7 @@
 //  http://sam.zoy.org/wtfpl/COPYING for more details.
 //
 
+#import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #include "easing.h"
 
