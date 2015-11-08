@@ -110,11 +110,11 @@
 		806EB7F3138F91A700E2D4A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		806EB828138F91C700E2D4A7 /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
 		806EB829138F91C700E2D4A7 /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
-		8689CE2A1B3359EE00001FEC /* AHEasing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHEasing_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8689CE2A1B3359EE00001FEC /* AHEasing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHEasing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8689CE2D1B3359EE00001FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8689CE2E1B3359EE00001FEC /* AHEasing_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHEasing_iOS.h; sourceTree = "<group>"; };
 		86CFBD9C1B3867BE00C93F9F /* AHEasing_iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AHEasing_iOS copy-Info.plist"; path = "/Users/wtmoose/Developer/AHEasing/AHEasing_iOS copy-Info.plist"; sourceTree = "<absolute>"; };
-		86CFBDA21B3867F800C93F9F /* AHEasing_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHEasing_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CFBDA21B3867F800C93F9F /* AHEasing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHEasing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CFBDA51B3867F800C93F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86CFBDA61B3867F800C93F9F /* AHEasing_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHEasing_OSX.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -253,8 +253,8 @@
 			children = (
 				8045277516A63161001DB532 /* EasingPlayground-iOS.app */,
 				8045279216A6318C001DB532 /* EasingPlayground-Mac.app */,
-				8689CE2A1B3359EE00001FEC /* AHEasing_iOS.framework */,
-				86CFBDA21B3867F800C93F9F /* AHEasing_OSX.framework */,
+				8689CE2A1B3359EE00001FEC /* AHEasing.framework */,
+				86CFBDA21B3867F800C93F9F /* AHEasing.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -383,7 +383,7 @@
 			);
 			name = AHEasing_iOS;
 			productName = AHEasing_iOS;
-			productReference = 8689CE2A1B3359EE00001FEC /* AHEasing_iOS.framework */;
+			productReference = 8689CE2A1B3359EE00001FEC /* AHEasing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		86CFBDA11B3867F700C93F9F /* AHEasing_OSX */ = {
@@ -401,7 +401,7 @@
 			);
 			name = AHEasing_OSX;
 			productName = AHEasing_OSX;
-			productReference = 86CFBDA21B3867F800C93F9F /* AHEasing_OSX.framework */;
+			productReference = 86CFBDA21B3867F800C93F9F /* AHEasing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -410,7 +410,7 @@
 		806EB7E2138F91A700E2D4A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Auerhaus Development, LLC";
 				TargetAttributes = {
 					8689CE291B3359EE00001FEC = {
@@ -615,6 +615,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auerhaus.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -642,6 +643,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auerhaus.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -680,6 +682,7 @@
 				INFOPLIST_FILE = "EasingPlayground-Mac/EasingPlayground-Mac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auerhaus.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
@@ -715,6 +718,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				INFOPLIST_FILE = "EasingPlayground-Mac/EasingPlayground-Mac-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.auerhaus.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
@@ -727,6 +731,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -801,7 +806,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractablelabs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = AHEasing;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -848,7 +854,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractablelabs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = AHEasing;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -904,7 +911,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractablelabs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = AHEasing;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -956,7 +964,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tractablelabs.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = AHEasing;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1011,6 +1020,7 @@
 				86CFBDB71B3867F800C93F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
