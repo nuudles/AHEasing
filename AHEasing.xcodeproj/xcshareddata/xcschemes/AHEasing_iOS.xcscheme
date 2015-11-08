@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8689CE291B3359EE00001FEC"
-               BuildableName = "AHEasing_iOS.framework"
+               BuildableName = "AHEasing.framework"
                BlueprintName = "AHEasing_iOS"
                ReferencedContainer = "container:AHEasing.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8689CE291B3359EE00001FEC"
-            BuildableName = "AHEasing_iOS.framework"
+            BuildableName = "AHEasing.framework"
             BlueprintName = "AHEasing_iOS"
             ReferencedContainer = "container:AHEasing.xcodeproj">
          </BuildableReference>
@@ -79,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8689CE291B3359EE00001FEC"
-            BuildableName = "AHEasing_iOS.framework"
+            BuildableName = "AHEasing.framework"
             BlueprintName = "AHEasing_iOS"
             ReferencedContainer = "container:AHEasing.xcodeproj">
          </BuildableReference>
@@ -97,7 +97,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8689CE291B3359EE00001FEC"
-            BuildableName = "AHEasing_iOS.framework"
+            BuildableName = "AHEasing.framework"
             BlueprintName = "AHEasing_iOS"
             ReferencedContainer = "container:AHEasing.xcodeproj">
          </BuildableReference>
